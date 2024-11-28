@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="&#48148;&#46161;&#54032; &#52832;&#54616;&#44592; &#47928;&#51228; 1"/>
+        <attribute name="authors" value="hi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-11-28 11:02:27 &#50724;&#51204;"/>
+        <attribute name="created" value="aGk7REVTS1RPUC0zMDJVR0NKOzIwMjQtMTEtMjg7MTA6MzI6Mjkg7Jik7KCEOzEwNDI5MA=="/>
+        <attribute name="edited" value="aGk7REVTS1RPUC0zMDJVR0NKOzIwMjQtMTEtMjg7MTE6MDI6Mjcg7Jik7KCEOzI7MTA0Mzk1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <while expression="i&lt;=5">
+                <declare name="j" type="Integer" array="False" size=""/>
+                <assign variable="j" expression="1"/>
+                <declare name="b" type="String" array="False" size=""/>
+                <assign variable="b" expression="&quot;&quot;"/>
+                <while expression="j&lt;=5">
+                    <if expression="i==3">
+                        <then>
+                            <assign variable="b" expression="b+&quot;O&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="(i==1 and j==3)or(i==5 and j==3)">
+                                <then>
+                                    <assign variable="b" expression="b+&quot;O&quot;"/>
+                                </then>
+                                <else>
+                                    <if expression="(i==2 and 1&lt;j&lt;5) or (i==4 and 1&lt;j&lt;5)">
+                                        <then>
+                                            <assign variable="b" expression="b+&quot;O&quot;"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="b" expression="b+&quot;X&quot;"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                    <assign variable="j" expression="j+1"/>
+                </while>
+                <output expression="b" newline="True"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="flowchart"/>
+        <attribute name="authors" value="hi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-11-28 10:32:24 &#50724;&#51204;"/>
+        <attribute name="created" value="aGk7REVTS1RPUC0zMDJVR0NKOzIwMjQtMTEtMjg7MDk6Mzc6NDcg7Jik7KCEOzEwNDMwMw=="/>
+        <attribute name="edited" value="aGk7REVTS1RPUC0zMDJVR0NKOzIwMjQtMTEtMjg7MTA6MzI6MjQg7Jik7KCEOzE7MTA0Mzkz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="arr1" type="Integer" array="True" size="9"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <while expression="i&lt;=9">
+                <if expression="i%2=1">
+                    <then>
+                        <declare name="j" type="Integer" array="False" size=""/>
+                        <assign variable="j" expression="1"/>
+                        <declare name="arr2" type="Integer" array="True" size="9"/>
+                        <while expression="j&lt;=9">
+                            <assign variable="arr2[j-1]" expression="i*j"/>
+                            <assign variable="j" expression="j+1"/>
+                        </while>
+                        <assign variable="arr1[i-1]" expression="arr2"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="arr1" newline="True"/>
+            <output expression="&quot;&#48152;&#48373;&#47928; &#51333;&#47308;&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
